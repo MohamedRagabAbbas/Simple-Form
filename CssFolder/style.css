@@ -1,0 +1,341 @@
+/* Tutorial - https://youtu.be/VufN46OyFng */
+
+/**
+* ! changing default styles of brower
+**/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /**
+  * ! style rules for content section
+  **/
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 55%;
+    min-height: 100vh;
+  }
+
+  
+  .image {
+    background:url(../../Images/Sab.jpeg);
+    /*background-image: src("../Images/Sab.jpg");*/
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+
+    
+  }
+ 
+  
+  .text {
+    text-align: center;
+    color: white;
+    font-family: 'Amiri Quran', serif;
+    font-size: 30px;
+  }
+  
+  /**
+  * ! style rules for form section
+  **/
+  
+  form {
+    background-color:  EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    /* max-width: 400px; */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+   h1{
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 50px;
+    color: #1b4845;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+  }
+  h1 span{
+    font-size: 60px;
+    text-decoration: underline;
+  }
+  .title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  form div input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    border: 2px solid #c4c4c4;
+    padding: 0 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form div {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  input:focus {
+    border: 2px solid #f2796e;
+  }
+  
+  /**
+  * ! style rules for social section
+  **/
+  
+  .btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  
+  .btn-1,
+  .btn-2 {
+    padding: 10px 5px;
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #c4c4c4;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+  }
+  
+  .btn-2 {
+    background-color: #4f70b5;
+    color: white;
+    border: 2px solid #4f70b5;
+  }
+  
+  .or {
+    text-align: center;
+  }
+  
+  .question {
+    font-size: 15px;
+  }
+  
+  span {
+    color: #f2796e;
+    cursor: pointer;
+  }
+  
+  /**
+  * ! style rules for form icons
+  **/
+  
+  form div i {
+    position: absolute;
+    padding: 10px;
+  }
+  
+  .success-icon,
+  .failure-icon {
+    right: 0;
+    opacity: 0;
+  }
+  
+  .failure-icon,
+  .error {
+    color: red;
+  }
+  
+  .success-icon {
+    color: green;
+  }
+  
+  .error {
+    font-size: 14.5px;
+    margin-top: 5px;
+  }
+  
+  /**
+  * ! style rules for button 
+  **/
+  
+  button {
+    margin-top: 15px;
+    width: 100%;
+    height: 45px;
+    background-color: #f2796e;
+    border: 2px solid #f2796e;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.1s ease;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  /**
+  * ! Media Queries are here
+  **/
+  
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    form,
+    .content {
+      width: 100%;
+    }
+  
+    .btn {
+      flex-direction: column;
+    }
+    .image {
+      height: 70vh;
+    }
+  }
+  
+  @media (max-width: 425px) {
+    form {
+      padding: 20px;
+    }
+  }
+  
+  @import url('https://fonts.googleapis.com/css?family=Lato:400,500,600,700&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+  }
+  .wrapper{
+    display: inline-flex;
+    background: #fff;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  .wrapper .option{
+    background: #fff;
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+  }
+  .wrapper .option .dot{
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 12px;
+  }
+  .wrapper .option .dot::before{
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #0069d9;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  #option-1:checked:checked ~ .option-1,
+  #option-2:checked:checked ~ .option-2{
+    border-color: #0069d9;
+    background: #0069d9;
+  }
+  #option-1:checked:checked ~ .option-1 .dot,
+  #option-2:checked:checked ~ .option-2 .dot{
+    background: #fff;
+  }
+  #option-1:checked:checked ~ .option-1 .dot::before,
+  #option-2:checked:checked ~ .option-2 .dot::before{
+    opacity: 1;
+    transform: scale(1);
+  }
+  .wrapper .option span{
+    font-size: 20px;
+    color: #808080;
+  }
+  #option-1:checked:checked ~ .option-1 span,
+  #option-2:checked:checked ~ .option-2 span{
+    color: #fff;
+  }
+  
+  
+
+  .idfile, .vacfile{
+    display: inline-block;
+    background-color: #0069d9;
+    color: white;
+    padding: 0.5rem;
+    font-family: sans-serif;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin-top: 1rem;
+  }
+  h2{
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 15px;
+    color: #1b4845;
+  }
+  .idandvacfiles{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+  }
